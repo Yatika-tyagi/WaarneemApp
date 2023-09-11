@@ -63,7 +63,7 @@
                     <br>
                     <!-- buttons -->
                     <div class="flex justify-between mt-14 mb-5">
-                        <button class=" text-green-700 rounded-sm border-xl font-bold py-[4px] px-[50px] border-solid border-2 border-green-700 ">DELETE</button>
+                        <button class=" text-green-700 rounded-sm border-xl font-bold py-[4px] px-[50px] border-solid border-2 border-green-700 " @click='deleteData(idx)'>DELETE</button>
                         <button class=" bg-slate-900 text-white rounded-sm font-bold py-[4px] px-[50px]" @click='add' v-if="shift.title && shift.description && shift.date && shift.price">SAVE</button>
                     </div>
                     
@@ -107,6 +107,9 @@ export default {
           this.$store.commit('app/SET_ADD_SHIFT',
            this.$store.state.app.addShift = !this.$store.state.app.addShift
         )
+    },
+    deleteData(idx) {  
+        this.$store.commit('app/SET_DELETE_SHIFT', idx);
     },
     datePick() {
 
