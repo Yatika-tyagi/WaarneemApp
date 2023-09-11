@@ -1,0 +1,14 @@
+{
+  "LeftSection": {
+    "description": "Auto imported from components/LeftSection.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "RightSection": {
+    "description": "Auto imported from components/RightSection.vue"
+  },
+  "Shifts": {
+    "description": "Auto imported from components/Shifts.vue"
+  }
+}
